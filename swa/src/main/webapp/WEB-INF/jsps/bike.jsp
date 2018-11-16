@@ -9,11 +9,12 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Welcome</title>
-<link rel="stylesheet" type="text/css" href="css/cust.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
 
-	<table>
+
+	<table class="table table-sm">
 		<tr>
 			<th>Bike Id</th>
 			<th>Bike color</th>

@@ -9,15 +9,27 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Welcome</title>
-<link rel="stylesheet" type="text/css" href="css/cust.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
 
-	<h1>Hello from Welcome.jsp</h1>
+ <nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    
+    <Button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="blist" formmethod="post"
+						formaction="http://localhost:8081/Customer">Display Customers</Button>
+ 
+						
+	<Button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="blist" formmethod="post"
+						formaction="http://localhost:8081/Bike">Display Bikes</Button>
+						
+  </form>
+</nav>
 
 
 
-	<form>
+
+<%--  	<form>
 		<table class="formtable">
 			<tr>
 				<td><Button type="submit" name="blist" formmethod="post"
@@ -27,7 +39,7 @@
 						formaction="http://localhost:8081/Bike">Display Bikes</Button></td>
 			</tr>
 		</table>
-	</form>
+	</form>  --%>
 
 </body>
 </html>

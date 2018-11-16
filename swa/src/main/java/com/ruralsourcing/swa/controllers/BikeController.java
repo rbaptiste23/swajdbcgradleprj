@@ -1,7 +1,5 @@
 package com.ruralsourcing.swa.controllers;
 
-import java.sql.SQLException;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,7 +16,7 @@ public class BikeController {
 	private CustomerBikeService customerBikeService;
 
 	@PostMapping
-	public ModelAndView viewData(ModelAndView mv) throws SQLException, ClassNotFoundException {
+	public ModelAndView viewData(ModelAndView mv) {
 		mv.setViewName("bike");
 		mv.addObject("bikelist", customerBikeService.getBikes());
 		return mv;
