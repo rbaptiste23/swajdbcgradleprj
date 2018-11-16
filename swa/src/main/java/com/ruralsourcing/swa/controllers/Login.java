@@ -11,6 +11,7 @@ public class Login {
 	@GetMapping
 	public String login() {		
 		return "login";
+		
 	}
 
 }
