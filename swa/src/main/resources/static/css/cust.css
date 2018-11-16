@@ -1,0 +1,19 @@
+table, th, td, tr {
+	border: 1px solid black;
+	text-align: left; 
+	width: auto;
+    color: white;
+}
+
+ 
+
+.formtable {
+	background-color: orange;
+	font-size: 20px;
+	color: white;
+}
+
+body{
+	background: #3D9970;
+	font: white;
+}
