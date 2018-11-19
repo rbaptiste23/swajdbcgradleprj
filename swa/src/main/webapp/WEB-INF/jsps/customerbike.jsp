@@ -18,18 +18,18 @@
 </head>
 <body>
 	<table class="table table-hover">
-		<caption>List of customers</caption>
+		<caption>List of customer bikes</caption>
 		<tr class="table-danger">
-			<th>Customer Id</th>
 			<th>Name</th>
-			<th>Ssi</th>
 			<th>Email</th>
-			<th>Phone</th>
+			<th>Bike Color</th>
+			<th>Make</th>
+			<th>Model</th>
 		</tr>
 
 		<c:set var="counter" scope="session" value="${1}" />
 
-		<c:forEach var="clist" items="${customerlist}" varStatus="index">
+		<c:forEach var="clist" items="${customerbikelist}" varStatus="index">
 			<c:set var="counter" scope="session" value="${counter+=1}" />
 			
 		    <c:if test ="${index.count % 2 == 0 }">
@@ -42,11 +42,11 @@
 			</c:if>  
 
 
-			<td><c:out value="${clist.customerId}" /></td>
 			<td><c:out value="${clist.name}" /></td>
-			<td><c:out value="${clist.ssi}" /></td>
 			<td><c:out value="${clist.email}" /></td>
-			<td><c:out value="${clist.phone}" /></td>
+			<td><c:out value="${clist.bikeColor}" /></td>
+			<td><c:out value="${clist.make}" /></td>
+			<td><c:out value="${clist.model}" /></td>
 		 </tr> 
 		</c:forEach>
 

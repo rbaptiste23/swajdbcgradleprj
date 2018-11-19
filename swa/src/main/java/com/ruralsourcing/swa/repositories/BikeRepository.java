@@ -9,7 +9,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.ruralsourcing.swa.dao.Bike;
-import com.ruralsourcing.swa.dao.Customer;
 
 @Repository
 public class BikeRepository {

@@ -13,33 +13,28 @@
 </head>
 <body>
 
- <nav class="navbar navbar-light bg-light">
-  <form class="form-inline">
-    
-    <Button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="blist" formmethod="post"
-						formaction="http://localhost:8081/Customer">Display Customers</Button>
- 
-						
-	<Button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="blist" formmethod="post"
-						formaction="http://localhost:8081/Bike">Display Bikes</Button>
-						
-  </form>
-</nav>
+	<nav class="navbar navbar-light bg-light">
+		<form class="form-inline">
+
+			<Button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+				name="blist" formmethod="post"
+				formaction="http://localhost:8081/Customer">Display
+				Customers</Button>
+
+			<Button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+				name="blist" formmethod="post"
+				formaction="http://localhost:8081/Bike">Display Bikes</Button>
+
+			<Button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+				name="blist" formmethod="post"
+				formaction="http://localhost:8081/CustomerBike">Display Customer Bikes</Button>
+
+		</form>
+	</nav>
 
 
 
 
-<%--  	<form>
-		<table class="formtable">
-			<tr>
-				<td><Button type="submit" name="blist" formmethod="post"
-						formaction="http://localhost:8081/Customer">Display Customers</Button></td>
-
-				<td><Button type="submit" name="blist" formmethod="post"
-						formaction="http://localhost:8081/Bike">Display Bikes</Button></td>
-			</tr>
-		</table>
-	</form>  --%>
 
 </body>
 </html>

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.ruralsourcing.swa.dao.Bike;
 import com.ruralsourcing.swa.dao.Customer;
+import com.ruralsourcing.swa.dao.CustomerBikes;
 import com.ruralsourcing.swa.repositories.BikeRepository;
 import com.ruralsourcing.swa.repositories.CustomerRepository;
 
@@ -25,6 +26,11 @@ public class CustomerBikeServiceImpl implements CustomerBikeService {
 
 	public List<Bike> getBikes() {
 		return bikeRepository.getAllBikes();
+	}
+
+	@Override
+	public List<CustomerBikes> getCustomerBikes() {
+		return customerRepository.getAllCustomerBikes();
 	}
 
 }
