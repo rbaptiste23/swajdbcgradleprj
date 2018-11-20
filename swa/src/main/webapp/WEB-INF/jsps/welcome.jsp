@@ -13,6 +13,11 @@
 </head>
 <body>
 
+
+
+
+
+
 	<nav class="navbar navbar-light bg-light">
 		<form class="form-inline">
 
@@ -27,14 +32,30 @@
 
 			<Button class="btn btn-outline-success my-2 my-sm-0" type="submit"
 				name="blist" formmethod="post"
-				formaction="http://localhost:8081/CustomerBike">Display Customer Bikes</Button>
+				formaction="http://localhost:8081/CustomerBike">Display
+				Customer Bikes</Button>
 
+			<!--  <Button class="btn btn-outline-success my-2 my-sm-0" id="like_button_container" />-->
+			
+			
+		
 		</form>
 	</nav>
 
 
+	<div id="root"> </div>
 
 
+	<!-- Load React. -->
+	<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+	<script src="https://unpkg.com/react@16/umd/react.development.js"
+		crossorigin></script>
+	<script
+		src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+		crossorigin></script>
+
+	<!-- Load our React component. -->
+	<script src="js/like_button.js"></script>
 
 </body>
 </html>

@@ -32,6 +32,7 @@
 			<c:if test="${index.count % 2 != 0}">
 				<tr class="table-warning">
 			</c:if>
+			
 			<td><c:out value="${blist.id}" /></td>
 			<td><c:out value="${blist.bikeColor}" /></td>
 			<td><c:out value="${blist.make}" /></td>

@@ -17,9 +17,6 @@ public class CustomerRepository {
 	@Autowired
 	JdbcTemplate jdbcTemplate;
 	
-	
-	
-
 	public List<Customer> getAllCustomers() {
 		String sql = "SELECT name, ssi, email, phone, customer_id FROM Customer;";
 		List<Customer> customerList = new ArrayList<>();
